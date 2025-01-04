@@ -1,0 +1,44 @@
+.background-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales properly to fill the screen */
+    z-index: -1; /* Sends the image to the background */
+}
+
+.text-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%; /* Occupies 50% of the screen width */
+    padding: 20px; /* Adds some padding around the text */
+    background: rgba(0, 0, 0, 0.788); /* Semi-transparent background for better readability */
+    color: white; /* Makes the text white */
+    z-index: 1; /* Keeps the text above the background image */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for effect */
+    font-family: Arial, sans-serif;
+
+}
+
+.text-container h1 {
+    font-size: 2.5rem; /* Adjust the size of the heading */
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.6; /* Improves readability */
+    margin-right: 30px;
+}
